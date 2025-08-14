@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akash G P — Resume</title>
+  <style>
+    /* ===== Base Reset ===== */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      line-height: 1.5;
+      color: #111827;
+      background: #f9fafb;
+    }
+
+    /* ===== Page Container ===== */
+    .page {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 40px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+    }
+
+    /* ===== Header ===== */
+    header {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      border-bottom: 3px solid #111827;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .name {
+      font-size: clamp(28px, 4vw, 36px);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+    .subtitle {
+      color: #374151;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      color: #374151;
+      font-size: 14px;
+    }
+    .contact a { color: #111827; text-decoration: none; border-bottom: 1px solid #d1d5db; }
+    .contact a:hover { border-bottom-color: #111827; }
+
+    /* ===== Sections ===== */
+    section { margin: 26px 0; }
+    h2 {
+      font-size: 18px;
+      margin: 0 0 12px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #111827;
+    }
+    .rule {
+      height: 2px; background: #111827; width: 56px; margin: 6px 0 14px;
+    }
+
+    /* ===== Content Blocks ===== */
+    p { margin: 8px 0; }
+    .pill-list, .kv, ul, .edu-list { margin: 8px 0 0; padding-left: 18px; }
+    ul { margin-top: 6px; }
+    li { margin: 4px 0; }
+
+    /* Key-value list */
+    .kv { list-style: none; padding-left: 0; }
+    .kv li { display: grid; grid-template-columns: 190px 1fr; gap: 10px; }
+    .kv strong { color: #1f2937; }
+
+    /* Project / Work items */
+    .item {
+      padding: 12px 14px;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      background: #fafafa;
+      margin-top: 10px;
+    }
+    .item .title { font-weight: 700; }
+    .item .meta { font-size: 13px; color: #4b5563; margin-top: 2px; }
+
+    /* Education list */
+    .edu-list { list-style: none; padding-left: 0; }
+    .edu-list li { margin: 10px 0; }
+    .edu-title { font-weight: 700; }
+    .edu-meta { color: #4b5563; font-size: 14px; }
+
+    /* ===== Print Styles ===== */
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        max-width: 100%;
+        padding: 24px 20px;
+      }
+      a { color: inherit; text-decoration: none; border: none; }
+      .item { background: transparent; border-color: #d1d5db; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" role="main" aria-label="Resume">
+    <header>
+      <div class="name">Akash G P</div>
+      <div class="subtitle">BE (ISE) | Acharya Iinstitute of Technology</div>
+      <div class="contact">
+        <span><a href="mailto:akashgpb02@gmail.com">akashgpb02@gmail.com</a></span>
+        <span>6361391505</span>
+        <span>Akash</span>
+        <span>Bengaluru, India</span>
+      </div>
+    </header>
+
+    <!-- Career Objective -->
+    <section aria-labelledby="objective">
+      <h2 id="objective">Career Objective</h2>
+      <div class="rule"></div>
+      <p>
+        To secure an entry-level position in Full Stack Development, Cloud Computing, or Develops where I can utilize my
+        technical skills in web development, cloud platforms, and CI/CD tools to build saleable applications, streamline
+        deployment processes, and contribute to efficient software solutions while continuously learning and growing in a
+        dynamic environment..
+      </p>
+    </section>
+
+    <!-- Certified Training -->
+    <section aria-labelledby="training">
+      <h2 id="training">Certified Training</h2>
+      <div class="rule"></div>
+
+      <div class="item">
+        <div class="title">Cloud Computing Fundamentals — NPTEL</div>
+        <div class="meta">Jan 2025 - Jan 2024</div>
+        <p>
+          Pursuing knowledge of ML algorithms mainly concentrates on supervised learning and developing skills to train the different
+          models with real-time datasets.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="title">UI/UX — Udemy platform</div>
+        <div class="meta">Dec 2024</div>
+        <p>
+          Completed a comprehensive UI/UX Design course on Udemy, gaining practical skills in Adobe XD, wire framing, prototyping, user
+          flow, responsive design, and usability testing for mobile and web interfaces..
+        </p>
+      </div>
+    </section>
+
+    <!-- Technical Skills and Interests -->
+    <section aria-labelledby="skills">
+      <h2 id="skills">Technical Skills and Interests</h2>
+      <div class="rule"></div>
+      <ul class="kv">
+        <li><strong>Course Studied</strong> <span>HTML, CSS, Cloude computing, ,GenAI</span></li>
+        <li><strong>Programming Languages</strong> <span>Java, Python (intermediate)</span></li>
+        <li><strong>Core Competencies</strong> <span>Teamwork, Leadership, Public Speaking, Creativity</span></li>
+        <li><strong>Cloud/Databases</strong> <span>MongoDB, Relational Database (MySQL)</span></li>
+        <li><strong>Languages Known</strong> <span>Kannada (Mother Tongue), English, Telugu, Hindi, Thamil (beginner)</span></li>
+      </ul>
+    </section>
+
+    <!-- Work Experience -->
+    <section aria-labelledby="work">
+      <h2 id="work">Work Experience</h2>
+      <div class="rule"></div>
+
+      <div class="item">
+        <div class="title">Interior Designer</div>
+        <div class="meta">Jan 1st 2021 - OJun 21st 2023</div>
+        <p>
+          Worked as an Interior Designer from 2021 to 2023, specializing in residential and commercial spaces. Developed design concepts,
+          3D visualizations, and detailed drawings. Collaborated with clients and contractors to ensure aesthetic, functional, and budget-friendly
+          solutions. Proficient in Auto CAD, Sketch Up, and interior styling to deliver customized design outcomes
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects and Achievements -->
+    <section aria-labelledby="projects">
+      <h2 id="projects">Projects and Achievements</h2>
+      <div class="rule"></div>
+
+      <div class="item">
+        <div class="title">Smart Door Lock System using Arduino and RFID (IOT – based)</div>
+        <div class="meta">Nov 1st 2024 - Mar 21st 2025</div>
+        <p>
+          This IoT-based smart door lock system uses RFID technology and an Arduino microcontroller to provide a secure and convenient way
+          to control access to a door. The system utilizes RFID tags for authentication, allowing only authorized users to unlock the door.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="rule"></div>
+      <ul class="edu-list">
+        <li>
+          <div class="edu-title">BE — Information Science and Engineering</div>
+          <div class="edu-meta">2023 - current</div>
+          <div>Acharya Institute of Technology, Bengaluru &nbsp; | &nbsp; CGPA: 6.13</div>
+        </li>
+        <li>
+          <div class="edu-title">Diploma in Mechanical Engineering</div>
+          <div class="edu-meta">Aryabharathi Polytechnic, Tumkur &nbsp; | &nbsp; 2017 - 2020</div>
+          <div>Percentage: 74%</div>
+        </li>
+        <li>
+          <div class="edu-title">State Board, 10th</div>
+          <div class="edu-meta">National English School, Yallapura &nbsp; | &nbsp; 2017</div>
+          <div>Percentage: 66.24%</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
